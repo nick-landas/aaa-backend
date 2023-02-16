@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  resources :messages
-  resources :memberships
-  resources :users
-  resources :groups
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # route to get new messages for the team
+  get '/groups/:id/:datetime', to: 'groups#show'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :groups, only: [:index, :show, :create, :update]
+  resources :users, only: [:index, :update, :create] do
+    resources :memberships, only: [:index] # route to get teams data that the user is a member of
+    resources :messages, only: [:index] # route to get messages the user can view
+  end
+
+  resources :memberships
+  mount ActionCable.server => '/cable'
 end
