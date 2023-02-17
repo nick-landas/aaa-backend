@@ -32,6 +32,7 @@
   Group.create(name: 'Shopping', description: 'How many ways can I blow my money?', image_url: 'https://i.imgur.com/V0air8j.jpg')
   Group.create(name: 'Dining', description: 'You had me at BBQ!', image_url: 'https://i.imgur.com/HGBW6yy.jpg')
   Group.create(name: 'Sporting Events & Tournaments', description: 'Football, golf and, why not?...pickleball', image_url: 'https://i.imgur.com/AyWt40h.jpg')
+  Group.create(name: 'Attractions & Amusement Parks', description: 'Rollercoasters? Indoor Water Parks?', image_url: 'https://i.imgur.com/xIj2rbM.jpg')
 
 
 Group.all.each do |team|

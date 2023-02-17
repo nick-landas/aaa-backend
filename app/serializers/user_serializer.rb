@@ -1,6 +1,6 @@
 class UserSerializer
     include FastJsonapi::ObjectSerializer
-    attributes :email, :name, :picture_url
+    attributes :email, :name, :image_url
     has_many :memberships
-    has_many :teams, through: :memberships
+    has_many :groups, through: :memberships
   end
