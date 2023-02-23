@@ -28,7 +28,7 @@
   Group.create(name: 'Sweet Home Alabama', description: 'All things Dixie', image_url: 'https://i.ibb.co/y4x3BrW/Lower-Alabama-Imgur.jpg')
   Group.create(name: 'Beach Life ', description: 'Beach life and events', image_url: 'https://i.ibb.co/fq11rJr/f1sc7ql-Imgur.jpg')
   Group.create(name: 'Fishing & Boating', description: 'Aye, aye! Skipper.', image_url: 'https://i.ibb.co/5rsC1jt/b9-DKaqy-Imgur.jpg')
-  Group.create(name: 'Concerts & Performances', description: 'Who/s in town?', image_url: 'https://i.ibb.co/zRxKCBn/1-TDNIHr-Imgur.jpg')
+  Group.create(name: 'Concerts & Performances', description: "Who\'s in town?", image_url: 'https://i.ibb.co/zRxKCBn/1-TDNIHr-Imgur.jpg')
   Group.create(name: 'Shopping', description: 'How many ways can I blow my money?', image_url: 'https://i.ibb.co/9cKjnpY/V0air8j-Imgur.jpg')
   Group.create(name: 'Dining', description: 'You had me at BBQ!', image_url: 'https://i.ibb.co/4VP9YZg/HGBW6yy-Imgur.jpg')
   Group.create(name: 'Sporting Events & Tournaments', description: 'Football, golf and, why not?...pickleball', image_url: 'https://i.ibb.co/R4NswtW/Ay-Wt40h-Imgur.jpg')

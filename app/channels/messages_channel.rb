@@ -7,7 +7,7 @@ class MessagesChannel < ApplicationCable::Channel
     def receive(data)
       group = Group.find_by(id: data['groupId'])
       user = User.find_by(id: data['userId'])
-      message = Group.messages.create(content: data['content'], user: user)
+      message = group.messages.create(content: data['content'], user: user)
       MessageRelayJob.perform_later(message)
     end
   

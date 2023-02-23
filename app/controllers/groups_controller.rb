@@ -19,7 +19,7 @@ class GroupsController < ApplicationController
     def create
       group = Group.new(group_params)
       if group.save
-        render json: groupSerializer.new(group).serialized_json
+        render json: GroupSerializer.new(group).serialized_json
       else
         render json: { error: 'could not be created' }
       end
