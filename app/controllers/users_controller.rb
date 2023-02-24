@@ -7,8 +7,12 @@ class UsersController < ApplicationController
     def update
       user = User.find(params[:id])
       membership = user.memberships.find_by(group_id: params[:group_id])
+      if membership.nil?
+        render json: { error: 'membership not found' }
+      else
       membership.update(last_viewed: params[:last_viewed])
       render json: MembershipSerializer.new(membership, include: [:group]).serialized_json
+      end
     end
   
     def create
